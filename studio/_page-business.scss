@@ -1,0 +1,44 @@
+ .sec-busy {
+     height: auto;
+     max-width: auto;
+     text-align: center;
+     background-size: cover;
+     padding: 200px 0px 200px 0px;
+     background-color: $colorBcgDark;
+ }
+ 
+ //  @media screen and (min-width:767px) {
+ //      .sec-busy {
+ //          background-color: $colorAccent;
+ //      }
+ //  }
+ .sec__title {
+     color: $colorWhite;
+     text-align: center;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     font-weight: 900;
+     font-size: 44px;
+     line-height: 1.36;
+     margin: 0px;
+ }
+ 
+ .sec__btn {
+     border-radius: 4px;
+     width: 200px;
+     height: 50px;
+     letter-spacing: 0.06em;
+     font-size: 16px;
+     line-height: 1.87;
+     font-weight: bold;
+     border-style: none;
+     text-align: center;
+     margin: 30px 250px;
+     font-family: Roboto;
+     outline: transparent;
+     color: $colorWhite;
+     background-color: $colorAccent;
+     &:hover {
+         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+ }

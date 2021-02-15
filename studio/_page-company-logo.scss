@@ -1,0 +1,75 @@
+ .company-container {
+     padding: 60px 0px 30px 0px;
+     @media screen and (min-width: $desktop) {
+         padding: 94px 0px 94px 0px;
+     }
+ }
+ 
+ .company__title {
+     font-size: 36px;
+     line-height: 1.16;
+     text-align: center;
+     letter-spacing: 0.03em;
+     margin: 0px;
+     padding: 0px 0px 30px 0px;
+     color: $colorDark;
+     @media screen and (min-width: $max-tablet) {
+         padding-bottom: 30px;
+     }
+     @media screen and (min-width: $desktop) {
+         padding-bottom: 50px;
+     }
+ }
+ 
+ .company__logo {
+     display: inline-flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     margin: 0px;
+     padding: 0px;
+ }
+ 
+ .company-list {
+     &:nth-child(odd) {
+         margin-right: 30px;
+         margin-bottom: 30px;
+     }
+     @media screen and (min-width: $max-tablet) {
+         &:nth-child(odd) {
+             margin: 0px
+         }
+         &:nth-child(2),
+         &:nth-child(5) {
+             margin: 0px 30px 30px 30px;
+         }
+     }
+     @media screen and (min-width: $desktop) {
+         &:nth-child(3) {
+             margin-right: 30px;
+         }
+     }
+ }
+ 
+ .company__link {
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     width: 170px;
+     height: 90px;
+     border-radius: 4px;
+     fill: $colorSocialNet;
+     border: solid 1px $colorSocialNet;
+     &:hover,
+     &:focus {
+         fill: $colorAccent;
+         border-color: $colorAccent;
+         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+     }
+     @media screen and (min-width: $desktop) {
+         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     }
+ }
+ 
+ .company__icon {
+     height: 49px;
+ }

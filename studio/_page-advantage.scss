@@ -1,0 +1,53 @@
+.advantage-container {
+    padding: 60px 0px 0px;
+}
+
+.box-adv {
+    margin: 0px;
+    padding: 0px;
+    border-style: none;
+    justify-content: center;
+}
+
+.box__list {
+    padding: 0px;
+}
+
+.adv-title {
+    margin: 0px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $colorDark;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.adv__info {
+    margin: 0px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.71;
+    padding-top: 10px;
+    color: $colorMain;
+    letter-spacing: 0.03em;
+}
+
+.icon-block {
+    display: inline-flex;
+    width: 450px;
+    height: 120px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    background: $colorBcgSec;
+    margin: 30px 0px 30px 0px;
+}
+
+.icon__skill {
+    width: 55px;
+    height: 61px;
+}
