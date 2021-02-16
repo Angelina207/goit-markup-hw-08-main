@@ -50,7 +50,13 @@ img {
 }
 
 .advantage-container {
-  padding: 60px 0px 0px;
+  padding: 30px 0px 60px;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .advantage-container {
+    padding: 64px 0px 94px;
+  }
 }
 
 .box-adv {
@@ -61,9 +67,26 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (min-width: 768px) {
+  .box-adv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .box__list {
   padding: 0px;
+}
+.box__list:nth-child(odd) {
+  margin-right: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .box__list:nth-last-child(2) {
+    margin-left: 30px;
+  }
 }
 
 .adv-title {
@@ -104,6 +127,16 @@ img {
           justify-content: center;
   background: #F5F4FA;
   margin: 30px 0px 30px 0px;
+}
+@media screen and (min-width: 768px) {
+  .icon-block {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icon-block {
+    width: 270px;
+  }
 }
 
 .icon__skill {
@@ -369,11 +402,16 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border-radius: 4px;
   fill: #AFB1B8;
   border: solid 1px #AFB1B8;
+}
+@media screen and (min-width: 768px) {
+  .company__link {
+    width: 226px;
+  }
 }
 .company__link:hover, .company__link:focus {
   fill: #2196F3;
@@ -383,6 +421,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .company__link {
+    width: 170px;
     -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);

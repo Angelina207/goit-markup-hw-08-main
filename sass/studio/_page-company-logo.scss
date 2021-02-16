@@ -54,11 +54,14 @@
      display: inline-flex;
      justify-content: center;
      align-items: center;
-     width: 170px;
+     width: 210px;
      height: 90px;
      border-radius: 4px;
      fill: $colorSocialNet;
      border: solid 1px $colorSocialNet;
+     @media screen and (min-width: $max-tablet) {
+         width: 226px;
+     }
      &:hover,
      &:focus {
          fill: $colorAccent;
@@ -66,6 +69,7 @@
          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
      }
      @media screen and (min-width: $desktop) {
+         width: 170px;
          transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
      }
  }
