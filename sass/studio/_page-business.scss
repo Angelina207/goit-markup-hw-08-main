@@ -5,13 +5,9 @@
      background-size: cover;
      padding: 200px 0px 200px 0px;
      background-color: $colorBcgDark;
+     background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url'../../images/';
  }
  
- //  @media screen and (min-width:767px) {
- //      .sec-busy {
- //          background-color: $colorAccent;
- //      }
- //  }
  .sec__title {
      color: $colorWhite;
      text-align: center;

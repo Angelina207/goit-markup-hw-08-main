@@ -1,0 +1,85 @@
+.card-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0px;
+}
+
+.card__li {
+    margin: 0px 0px 30px 0px;
+    padding: 0px;
+    border: 1px solid $colorLineHeader;
+}
+
+.overlay-link {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.overlay-link:hover .overlay__style,
+.overlay-link:focus .overlay__style {
+    transform: translateY(0);
+}
+
+.overlay-block {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay__style {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: 250ms ease;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay__text {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    margin: 0px;
+    padding: 65px 25px;
+    color: $colorWhite;
+}
+
+.headtitle-box {
+    width: 450px;
+    color: $colorDark;
+    padding: 20px 0px 20px 24px;
+    @media screen and (min-width: $max-tablet) {
+        width: 354px;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 370px;
+    }
+}
+
+.heatitle__card {
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+}
+
+.headtitle__text {
+    letter-spacing: 0.03em;
+    color: $colorMain;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+}
