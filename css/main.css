@@ -24,7 +24,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -34,6 +33,11 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 
@@ -505,7 +509,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .footer-container {
     -ms-flex-item-align: baseline;
         align-self: baseline;
@@ -703,7 +707,6 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   outline: none;
-  width: 450px;
   height: 50px;
   padding: 15px 16px;
   border-radius: 4px;
@@ -741,6 +744,11 @@ footer {
   line-height: 20px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 480px) {
+  .subscribe {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe {
@@ -788,16 +796,6 @@ footer {
   fill: #FFFFFF;
 }
 
-.portfolio-sec {
-  background-color: #FFFFFF;
-  padding: 60px 0px 40px 0px;
-}
-@media screen and (width: 768px) {
-  .portfolio-sec {
-    padding: 60px 0px 30px 0px;
-  }
-}
-
 .button-box {
   margin: 0px;
   padding: 0px;
@@ -807,9 +805,24 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media screen and (min-width: 768px) {
+  .button-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .button__list {
-  margin: 0px 8px 15px 0px;
+  margin: 0px 8px 30px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .button__list {
+    margin-top: 50px;
+  }
 }
 
 .button__info {
@@ -840,23 +853,42 @@ footer {
   color: #FFFFFF;
 }
 
+.portfolio-sec {
+  background-color: #FFFFFF;
+  padding: 60px 0px 40px 0px;
+  width: 100%;
+}
+@media screen and (width: 768px) {
+  .portfolio-sec {
+    padding: 60px 0px 30px 0px;
+  }
+}
+
 .card-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 0;
   padding: 0px;
 }
 
 .card__li {
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 27px 0px;
   padding: 0px;
   border: 1px solid #ECECEC;
+}
+@media screen and (min-width: 768px) {
+  .card__li:nth-child(even) {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__li:nth-child(3n+2) {
+    margin-left: 27px;
+    margin-right: 27px;
+  }
 }
 
 .overlay-link {

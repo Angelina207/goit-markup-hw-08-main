@@ -1,20 +1,19 @@
-.portfolio-sec {
-    background-color: $colorWhite;
-    padding: 60px 0px 40px 0px;
-    @media screen and (width: $max-tablet) {
-        padding: 60px 0px 30px 0px;
-    }
-}
-
 .button-box {
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
+    @media screen and (min-width: $max-tablet) {
+        justify-content: center;
+    }
 }
 
 .button__list {
-    margin: 0px 8px 15px 0px;
+    margin: 0px 8px 30px 0px;
+    justify-content: center;
+    @media screen and (min-width: $desktop) {
+        margin-top: 50px;
+    }
 }
 
 .button__info {

@@ -7,7 +7,7 @@ footer {
     display: flex;
     text-align: center;
     flex-direction: column;
-    @media screen and (min-width: $tablet) {
+    @media screen and (max-width: $tablet) {
         align-self: baseline;
     }
     @media screen and (min-width: $desktop) {
@@ -145,7 +145,6 @@ footer {
 .subscribe {
     align-items: center;
     outline: none;
-    width: 450px;
     height: 50px;
     padding: 15px 16px;
     border-radius: 4px;
@@ -158,6 +157,9 @@ footer {
         line-height: 20px;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
+    }
+    @media screen and (min-width:$mobile) {
+        width: 450px;
     }
     @media screen and (min-width: $desktop) {
         margin-left: 95px;
