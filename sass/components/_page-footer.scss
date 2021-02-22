@@ -1,0 +1,141 @@
+                       footer {
+                           background-color: $colorBcgDark;
+                           padding: 60px 0px 60px 0px;
+                           display: flex;
+                       }
+                       
+                       .footer-container {
+                           display: flex;
+                       }
+                       
+                       .footer-logo {
+                           display: inline-flex;
+                           color: $colorWhite;
+                           font-size: 26px;
+                           letter-spacing: 0.03em;
+                           font-family: Raleway;
+                           font-weight: bold;
+                           line-height: 1.19;
+                           padding: 0px;
+                       }
+                       
+                       .address {
+                           display: inline-flex;
+                           letter-spacing: 0.03em;
+                           font-size: 14px;
+                           line-height: 1.74;
+                           font-style: normal;
+                           color: $colorWhite;
+                           line-height: 1.19;
+                           padding: 20px 0px 0px 0px;
+                           margin: 0px;
+                       }
+                       
+                       .address__link {
+                           display: inline-flex;
+                           padding: 0px;
+                           margin: 9px 0px 0px 0px;
+                           letter-spacing: 0.03em;
+                           font-size: 14px;
+                           line-height: 1.74;
+                           color: $colorShadow;
+                           line-height: 1.19;
+                           transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                           &:hover,
+                           &:focus {
+                               color: $colorAccent;
+                           }
+                       }
+                       
+                       .footer-title {
+                           position: absolute;
+                           display: inline-flex;
+                           font-size: 14px;
+                           line-height: 16px;
+                           letter-spacing: 0.03em;
+                           margin: 0px 0px 0px 70px;
+                           padding: 12px 0px 0px 0px;
+                           color: $colorWhite;
+                           text-transform: uppercase;
+                           font-weight: $sizeFont;
+                       }
+                       
+                       .footer-title--left {
+                           margin-left: 90px;
+                       }
+                       
+                       .footer__block {
+                           display: inline-flex;
+                           padding: 0px;
+                           margin-left: 70px;
+                       }
+                       
+                       .footer__link {
+                           display: inline-flex;
+                           width: 44px;
+                           height: 44px;
+                           border-radius: 50%;
+                           align-items: center;
+                           justify-content: center;
+                           margin: 30px 10px 0px 0px;
+                           fill: $colorWhite;
+                           background: rgba(255, 255, 255, 0.1);
+                           transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                           &:hover,
+                           &:focus {
+                               background-color: $colorAccent;
+                           }
+                       }
+                       
+                       .footer__icon {
+                           display: inline-flex;
+                           width: 20px;
+                           height: 20px;
+                       }
+                       
+                       .subscribe {
+                           outline: none;
+                           width: 358px;
+                           height: 50px;
+                           padding: 15px 16px;
+                           border-radius: 4px;
+                           margin: 45px 15px 0px 90px;
+                           color: $colorWhite;
+                           border: 1px solid rgba(255, 255, 255, 0.3);
+                           background-color: $colorBcgDark;
+                       }
+                       
+                       .button__text {
+                           position: relative;
+                           display: inline-flex;
+                           cursor: pointer;
+                           width: 200px;
+                           height: 50px;
+                           font-size: 16px;
+                           line-height: 30px;
+                           border-radius: 4px;
+                           font-weight: bold;
+                           letter-spacing: 0.06em;
+                           margin: 45px 0px 0px 0px;
+                           padding: 0px 10px 0px 29px;
+                           align-items: center;
+                           border-style: none;
+                           outline: transparent;
+                           color: $colorWhite;
+                           background-color: $colorAccent;
+                           transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                           &:hover,
+                           &:focus {
+                               text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                           }
+                       }
+                       
+                       .button__icon {
+                           position: absolute;
+                           width: 24px;
+                           height: 24px;
+                           top: 25%;
+                           right: 15%;
+                           fill: $colorWhite;
+                           transition: drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                       }

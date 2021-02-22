@@ -1,0 +1,22 @@
+body {
+    background-color: $colorWhite;
+    color: $colorDark;
+    font-family: $bodyFont;
+    padding-top: 70px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}

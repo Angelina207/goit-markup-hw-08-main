@@ -1,0 +1,49 @@
+.service-container {
+    padding: 94px 0px 94px;
+}
+
+.serv-container {
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+    padding: 0px;
+}
+
+.serv-title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $colorDark;
+    margin: 0px;
+    padding: 0px 0px 50px;
+}
+
+.list--right {
+    padding: 0px 30px 0px 0px;
+}
+
+.description-block {
+    position: relative;
+    overflow: hidden;
+}
+
+.description-block .desc__text {
+    background: rgba(47, 48, 58, 0.8);
+    bottom: 3px;
+    left: 0px;
+    width: 370px;
+    padding: 27px 0px;
+    position: absolute;
+}
+
+.desc__label {
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    margin: 0px;
+    color: $colorWhite;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: $sizeFont;
+}
