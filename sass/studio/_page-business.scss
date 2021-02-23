@@ -1,11 +1,11 @@
  .sec-busy {
-     height: auto;
-     max-width: auto;
+     min-height: auto;
+     max-width: 480px;
      text-align: center;
      background-size: cover;
-     padding: 200px 0px 200px 0px;
+     padding: 118px 0px 118px 0px;
      background-color: $colorBcgDark;
-     background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url'../../images/';
+     background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/header-img480x400.jpg');
  }
  
  .sec__title {
@@ -14,12 +14,13 @@
      letter-spacing: 0.06em;
      text-transform: uppercase;
      font-weight: 900;
-     font-size: 44px;
-     line-height: 1.36;
+     font-size: 26px;
+     line-height: 1.6;
      margin: 0px;
  }
  
  .sec__btn {
+     justify-content: center;
      border-radius: 4px;
      width: 200px;
      height: 50px;
@@ -29,7 +30,7 @@
      font-weight: bold;
      border-style: none;
      text-align: center;
-     margin: 30px 250px;
+     margin-top: 30px;
      font-family: Roboto;
      outline: transparent;
      color: $colorWhite;
