@@ -1,23 +1,7 @@
  .company-container {
      padding: 60px 0px 30px 0px;
      @media screen and (min-width: $desktop) {
-         padding: 94px 0px 94px 0px;
-     }
- }
- 
- .company__title {
-     font-size: 36px;
-     line-height: 1.16;
-     text-align: center;
-     letter-spacing: 0.03em;
-     margin: 0px;
-     padding: 0px 0px 30px 0px;
-     color: $colorDark;
-     @media screen and (min-width: $max-tablet) {
-         padding-bottom: 30px;
-     }
-     @media screen and (min-width: $desktop) {
-         padding-bottom: 50px;
+         padding: 94px 0px 64px 0px;
      }
  }
  
@@ -30,11 +14,17 @@
  }
  
  .company-list {
-     &:nth-child(odd) {
-         margin-right: 30px;
+     @media screen and (max-width: $max-mobile) {
+         flex-direction: column;
          margin-bottom: 30px;
      }
-     @media screen and (min-width: $max-tablet) {
+     @media screen and (min-width: $mobile) {
+         &:nth-child(odd) {
+             margin-right: 30px;
+             margin-bottom: 30px;
+         }
+     }
+     @media screen and (min-width: $tablet) {
          &:nth-child(odd) {
              margin: 0px
          }
@@ -59,14 +49,14 @@
      border-radius: 4px;
      fill: $colorSocialNet;
      border: solid 1px $colorSocialNet;
-     @media screen and (min-width: $max-tablet) {
-         width: 226px;
-     }
      &:hover,
      &:focus {
          fill: $colorAccent;
          border-color: $colorAccent;
          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+     }
+     @media screen and (min-width: $tablet) {
+         width: 226px;
      }
      @media screen and (min-width: $desktop) {
          width: 170px;

@@ -19,6 +19,20 @@ img {
     height: auto;
 }
 
+.general-title {
+    font-size: 28px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0px;
+    padding: 0px 0px 30px;
+    color: $colorDark;
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 50px;
+        font-size: 36px;
+    }
+}
+
 .container {
     padding-left: 15px;
     padding-right: 15px;
