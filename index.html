@@ -17,106 +17,108 @@
     <!--Главные ссылки в шапке сайта-->
     <header>
         <div class="container header--flex">
-            <nav class="navigation">
+            <nav class="navigation ">
                 <a class="logo" href="./index.html"><span class="logo--blue">Web</span>Studio</a>
-                <!-- <button class="button-menu button__open">
-                    <svg aria-label="Иконки для переключателя мобильного меню" width="24px" height="24px">
-                        <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_24px"></use>
-                        <use class="icon-cross" href="./images/symbol-defs.svg#icon-close_24px"></use>
+
+                <button class="menu-burger" data-menu-button>
+                    <svg class="icons__menu" aria-label="menu switch " width="24px " height="24px ">
+                        <use class="icon__btn-burger" href="./images/symbol-defs.svg#icon-menu_24px "></use>
+                        <use class="icon__btn-close" href="./images/symbol-defs.svg#icon-close_24px "></use>
                     </svg>
-                </button> -->
+                </button>
+                <div class="menu__mobile-wrapper" id="menu-container" data-menu>
+                    <ul class="header-nav ">
+                        <li class="header__list ">
+                            <a class="header__current " href="./index.html ">Студия</a>
+                        </li>
+                        <li class="header__list ">
+                            <a class="header__link " href="./portfolio.html ">Портфолио</a>
+                        </li>
+                        <li class="header__list ">
+                            <a class="header__link " href="Контакты ">Контакты</a>
+                        </li>
+                    </ul>
 
-                <ul class="header-nav">
-                    <li class="header__list">
-                        <a class="header__current" href="./index.html">Студия</a>
-                    </li>
-                    <li class="header__list">
-                        <a class="header__link" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="header__list">
-                        <a class="header__link" href="Контакты">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <ul class="communication-links">
-                <li>
-                    <a class="comm__links comm__links--right" href="email:info@devstudio.com">
-                        <svg class="comm__envelope">
-                            <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
+                    <ul class="communication-links ">
+                        <li>
+                            <a class="comm__links comm__links--right " href="email:info@devstudio.com ">
+                                <svg class="comm__envelope ">
+                            <use href="./images/symbol-defs.svg#icon-envelope-hover "></use>
                         </svg> info@devstudio.com
-                    </a>
-                </li>
-                <li>
-                    <a class="comm__links" href="tel:+38096111111">
-                        <svg class="comm__smart">
-                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="comm__links " href="tel:+38096111111 ">
+                                <svg class="comm__smart ">
+                            <use href="./images/symbol-defs.svg#icon-smartphone "></use>
                         </svg> +38 096 111 11 11</a>
-                </li>
-            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
 
     <!--Основная информация о компании-->
     <main>
-        <section class="sec-busy">
-            <div class="">
-                <h1 class="sec__title">Эффективные решения<br> для вашего бизнеса</h1>
-                <button class="sec__btn" data-modal-open>Заказать услугу</button>
+        <!-- <section class="sec-busy ">
+            <div class=" ">
+                <h1 class="sec__title ">Эффективные решения<br> для вашего бизнеса</h1>
+                <button class="sec__btn " data-modal-open>Заказать услугу</button>
             </div>
-        </section>
-        <section class="advantage-container">
-            <div class="container">
-                <ul class="box-adv">
-                    <li class="box__list">
-                        <div class="icon-block">
-                            <svg class="icon__skill">
-                            <use href="./images/symbol-defs.svg#icon-antenna-1-1"></use>
+        </section> -->
+        <section class="advantage-container ">
+            <div class="container ">
+                <ul class="box-adv ">
+                    <li class="box__list ">
+                        <div class="icon-block ">
+                            <svg class="icon__skill ">
+                            <use href="./images/symbol-defs.svg#icon-antenna-1-1 "></use>
                         </svg>
                         </div>
-                        <h3 class="adv-title">Внимание к деталям</h3>
-                        <p class="adv__info">Идейные соображения, а также<br> начало повседневной работы по<br> формированию позиции.</p>
+                        <h3 class="adv-title ">Внимание к деталям</h3>
+                        <p class="adv__info ">Идейные соображения, а также<br> начало повседневной работы по<br> формированию позиции.</p>
                     </li>
-                    <li class="box__list">
-                        <div class="icon-block">
-                            <svg class="icon__skill">
-                            <use href="./images/symbol-defs.svg#icon-clock-1"></use>
+                    <li class="box__list ">
+                        <div class="icon-block ">
+                            <svg class="icon__skill ">
+                            <use href="./images/symbol-defs.svg#icon-clock-1 "></use>
                         </svg>
                         </div>
-                        <h3 class="adv-title">Пунктуальность</h3>
-                        <p class="adv__info">Задача организации, в особенности <br>же рамки и место обучения <br>кадров влечет за собой.</p>
+                        <h3 class="adv-title ">Пунктуальность</h3>
+                        <p class="adv__info ">Задача организации, в особенности <br>же рамки и место обучения <br>кадров влечет за собой.</p>
                     </li>
-                    <li class="box__list">
-                        <div class="icon-block">
-                            <svg class="icon__skill">
-                            <use href="./images/symbol-defs.svg#icon-diagram-1"></use>
+                    <li class="box__list ">
+                        <div class="icon-block ">
+                            <svg class="icon__skill ">
+                            <use href="./images/symbol-defs.svg#icon-diagram-1 "></use>
                         </svg>
                         </div>
-                        <h3 class="adv-title">Планирование</h3>
-                        <p class="adv__info">Равным образом консультация с<br> широким активом в значительной<br> степени обуславливает.</p>
+                        <h3 class="adv-title ">Планирование</h3>
+                        <p class="adv__info ">Равным образом консультация с<br> широким активом в значительной<br> степени обуславливает.</p>
                     </li>
-                    <li class="box__list">
-                        <div class="icon-block">
-                            <svg class="icon__skill">
-                            <use href="./images/symbol-defs.svg#icon-astronaut-1"></use>
+                    <li class="box__list ">
+                        <div class="icon-block ">
+                            <svg class="icon__skill ">
+                            <use href="./images/symbol-defs.svg#icon-astronaut-1 "></use>
                         </svg>
                         </div>
-                        <h3 class="adv-title">Современные технологии</h3>
-                        <p class="adv__info">Значимость этих проблем <br>настолько очевидна, что <br> реализация плановых заданий.</p>
+                        <h3 class="adv-title ">Современные технологии</h3>
+                        <p class="adv__info ">Значимость этих проблем <br>настолько очевидна, что <br> реализация плановых заданий.</p>
                     </li>
                 </ul>
             </div>
         </section>
 
         <!-- Фото разработки команды -->
-        <section class="service-container">
-            <div class="container">
-                <h2 class="serv-title">Чем мы занимаемся</h2>
-                <ul class="serv-container">
-                    <li class="list--right">
-                        <div class="description-block">
+        <section class="service-container ">
+            <div class="container ">
+                <h2 class="serv-title ">Чем мы занимаемся</h2>
+                <ul class="serv-container ">
+                    <li class="list--right ">
+                        <div class="description-block ">
                             <picture>
-                                <source srcset="./images/desc-add370x294.jpg 1x, ./images/desc-add370x294@2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/desc-add370x294.jpg 1x, ./images/desc-add370x294@2x.jpg 2x " media="(min-width: 1200px) ">
                                 <img src=" ./images/desc-add370x294.jpg " alt="Веб разработка ">
                             </picture>
                             <div class="desc__text ">
@@ -127,8 +129,8 @@
                     <li class="list--right ">
                         <div class="description-block ">
                             <picture>
-                                <source srcset="./images/desing-add370x294.jpg 1x, ./images/desing-add370x294@2x.jpg 2x" media="(min-width: 1200px)">
-                                <img src="./images/desing-add370x294.jpg" alt="Мобильная разработка ">
+                                <source srcset="./images/desing-add370x294.jpg 1x, ./images/desing-add370x294@2x.jpg 2x " media="(min-width: 1200px) ">
+                                <img src="./images/desing-add370x294.jpg " alt="Мобильная разработка ">
                             </picture>
                             <div class=" desc__text ">
                                 <p class="desc__label ">Мобильные приложения</p>
@@ -138,7 +140,7 @@
                     <li>
                         <div class="description-block ">
                             <picture>
-                                <source srcset="./images/smart-add370x294.jpg 1x, ./images/smart-add370x294@2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/smart-add370x294.jpg 1x, ./images/smart-add370x294@2x.jpg 2x " media="(min-width: 1200px) ">
                                 <img src="./images/smart-add370x294.jpg " alt="Цветовая палитра ">
                             </picture>
                             <div class="desc__text ">
@@ -385,7 +387,7 @@
         <div class="container ">
             <div class="footer-container ">
                 <div class="footer__nav ">
-                    <div class="footer__column">
+                    <div class="footer__column ">
                         <a href=" WebStudio " class="footer-logo "><span class="logo--blue ">Web</span>Studio</a>
 
                         <address>
@@ -429,7 +431,7 @@
                     </div>
                 </div>
                 <div class="mailing ">
-                    <div class="mailing__sub">
+                    <div class="mailing__sub ">
                         <p class="footer-title footer-title--space ">
                             ПОДПИШИТЕСЬ НА РАССЫЛКУ
                         </p>
@@ -496,7 +498,7 @@
         </div> -->
 
     <script src="./js/modal.js "></script>
-    <script scr="./js/menu.js"></script>
+    <script src="./js/menu.js "></script>
 </body>
 
 </html>
