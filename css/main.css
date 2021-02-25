@@ -416,8 +416,10 @@ header {
 .box__list {
   padding: 0px;
 }
-.box__list:nth-child(odd) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .box__list:nth-child(odd) {
+    margin-right: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .box__list:nth-last-child(2) {
@@ -448,25 +450,40 @@ header {
   letter-spacing: 0.03em;
 }
 
-.icon-block {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 450px;
-  height: 120px;
-  border-radius: 4px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #F5F4FA;
-  margin: 30px 0px 30px 0px;
-}
 @media screen and (max-width: 479px) {
   .icon-block {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    margin: 30px 0px 30px 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #F5F4FA;
+  }
+}
+@media screen and (min-width: 480px) {
+  .icon-block {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 450px;
+    height: 120px;
+    border-radius: 4px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #F5F4FA;
+    margin: 30px 0px 30px 0px;
   }
 }
 @media screen and (min-width: 768px) {

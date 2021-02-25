@@ -1,79 +1,89 @@
-.advantage-container {
-    padding: 30px 0px 60px;
-    width: 100%;
-    @media screen and (min-width: $desktop) {
-        padding: 64px 0px 94px;
-    }
-}
-
-.box-adv {
-    margin: 0px;
-    padding: 0px;
-    border-style: none;
-    justify-content: center;
-    @media (min-width: $max-tablet) {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-.box__list {
-    padding: 0px;
-    &:nth-child(odd) {
-        margin-right: 30px;
-    }
-    @media screen and (min-width: $desktop) {
-        &:nth-last-child(2) {
-            margin-left: 30px;
+    .advantage-container {
+        padding: 30px 0px 60px;
+        width: 100%;
+        @media screen and (min-width: $desktop) {
+            padding: 64px 0px 94px;
         }
     }
-}
-
-.adv-title {
-    margin: 0px;
-    font-weight: bold;
-    text-align: center;
-    margin: 0px;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    color: $colorDark;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.adv__info {
-    margin: 0px;
-    text-align: center;
-    font-size: 15px;
-    line-height: 1.71;
-    padding-top: 10px;
-    color: $colorMain;
-    letter-spacing: 0.03em;
-}
-
-.icon-block {
-    @media screen and (max-width: $max-mobile) {
-        width: 100%;
+    
+    .box-adv {
+        margin: 0px;
+        padding: 0px;
+        border-style: none;
+        justify-content: center;
+        @media (min-width: $tablet) {
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
-    @media screen and(min-width) {}
-    display: inline-flex;
-    width: 450px;
-    height: 120px;
-    border-radius: 4px;
-    align-items: center;
-    justify-content: center;
-    background: $colorBcgSec;
-    margin: 30px 0px 30px 0px;
-    @media screen and (min-width: $tablet) {
-        width: 354px;
+    
+    .box__list {
+        padding: 0px;
+        @media screen and (min-width: $tablet) {
+            &:nth-child(odd) {
+                margin-right: 30px;
+            }
+        }
+        @media screen and (min-width: $desktop) {
+            &:nth-last-child(2) {
+                margin-left: 30px;
+            }
+        }
     }
-    @media screen and (min-width: $desktop) {
-        width: 270px;
+    
+    .adv-title {
+        margin: 0px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0px;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: $colorDark;
+        text-transform: uppercase;
+        text-align: center;
     }
-}
-
-.icon__skill {
-    width: 55px;
-    height: 61px;
-}
+    
+    .adv__info {
+        margin: 0px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 1.71;
+        padding-top: 10px;
+        color: $colorMain;
+        letter-spacing: 0.03em;
+    }
+    
+    .icon-block {
+        @media screen and (max-width: $max-mobile) {
+            display: inline-flex;
+            width: 100%;
+            height: 120px;
+            border-radius: 4px;
+            margin: 30px 0px 30px 0px;
+            align-items: center;
+            justify-content: center;
+            background: $colorBcgSec;
+        }
+        @media screen and(min-width: $mobile) {
+            display: inline-flex;
+            width: 450px;
+            height: 120px;
+            border-radius: 4px;
+            align-items: center;
+            justify-content: center;
+            background: $colorBcgSec;
+            margin: 30px 0px 30px 0px;
+        }
+        @media screen and (min-width: $tablet) {
+            width: 354px;
+        }
+        @media screen and (min-width: $desktop) {
+            width: 270px;
+        }
+    }
+    
+    .icon__skill {
+        width: 55px;
+        height: 61px;
+    }
