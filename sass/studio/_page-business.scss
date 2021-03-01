@@ -1,41 +1,77 @@
- .sec-busy {
-     min-height: auto;
-     max-width: 480px;
-     text-align: center;
-     background-size: cover;
-     padding: 118px 0px 118px 0px;
-     background-color: $colorBcgDark;
-     background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/header-img480x400.jpg');
- }
- 
- .sec__title {
-     color: $colorWhite;
-     text-align: center;
-     letter-spacing: 0.06em;
-     text-transform: uppercase;
-     font-weight: 900;
-     font-size: 26px;
-     line-height: 1.6;
-     margin: 0px;
- }
- 
- .sec__btn {
-     justify-content: center;
-     text-align: center;
-     border-radius: 4px;
-     width: 200px;
-     height: 50px;
-     letter-spacing: 0.06em;
-     font-size: 16px;
-     line-height: 1.87;
-     font-weight: bold;
-     border-style: none;
-     margin-top: 30px;
-     font-family: Roboto;
-     outline: transparent;
-     color: $colorWhite;
-     background-color: $colorAccent;
-     &:hover {
-         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-     }
- }
+                                    .sec-busy {
+                                        max-width: 1600px;
+                                        text-align: center;
+                                        background-size: cover;
+                                        background-position: 50% 50%;
+                                        padding: 118px 0px 118px 0px;
+                                        background-color: $colorBcgDark;
+                                        @media screen and (max-width: $max-mobile) {
+                                            width: 100%;
+                                            height: 400px;
+                                            background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/header-img480x400.jpg');
+                                            @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2px) {
+                                                .sec-busy {
+                                                    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/header-img480x400@2x.jpg');
+                                                }
+                                            }
+                                        }
+                                        @media screen and (min-width: $mobile) {
+                                            background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/header-img480x400.jpg');
+                                            @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2px) {
+                                                .sec-busy {
+                                                    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/header-img480x400@2x.jpg');
+                                                }
+                                            }
+                                        }
+                                        @media screen and (min-width: $tablet) {
+                                            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/header-img768x400.jpg');
+                                            @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2px) {
+                                                .sec-busy {
+                                                    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/header-img768x400@2x.jpg');
+                                                }
+                                            }
+                                        }
+                                        @media screen and (min-width: $desktop) {
+                                            height: 600px;
+                                            background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/header-img1600x600.jpg;')
+                                        }
+                                        @media screen and (min-device-pixel-ratio: 2),
+                                        screen and (min-resolution: 192dpi),
+                                        screen and (min-resolution: 2px) {
+                                            .sec-busy {
+                                                background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/header-img1600x600@2x.jpg');
+                                            }
+                                        }
+                                    }
+                                    
+                                    .sec__title {
+                                        color: $colorWhite;
+                                        text-align: center;
+                                        letter-spacing: 0.06em;
+                                        text-transform: uppercase;
+                                        font-weight: 900;
+                                        font-size: 26px;
+                                        line-height: 1.6;
+                                        margin: 0px;
+                                    }
+                                    
+                                    .sec__btn {
+                                        justify-content: center;
+                                        text-align: center;
+                                        border-radius: 4px;
+                                        width: 200px;
+                                        height: 50px;
+                                        letter-spacing: 0.06em;
+                                        font-size: 16px;
+                                        line-height: 1.87;
+                                        font-weight: bold;
+                                        border-style: none;
+                                        margin-top: 30px;
+                                        font-family: Roboto;
+                                        outline: transparent;
+                                        color: $colorWhite;
+                                        background-color: $colorAccent;
+                                        &:hover {
+                                            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                        }
+                                    }

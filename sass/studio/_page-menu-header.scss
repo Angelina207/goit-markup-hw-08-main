@@ -1,24 +1,11 @@
       .menu__mobile-wrapper {
-          @media screen and (max-width: $max-mobile) {
-              display: none;
-              padding: 48px 40px;
-              &.is-open {
-                  position: fixed;
-                  display: flex;
-                  flex-direction: column;
-                  top: 0;
-                  right: 0;
-                  width: 100%;
-                  height: 100%;
-                  background-color: $colorWhite;
-              }
-          }
           @media screen and (min-width: $mobile) {
               display: none;
               padding: 48px 40px;
               &.is-open {
                   position: fixed;
                   display: flex;
+                  z-index: 10;
                   flex-direction: column;
                   top: 0;
                   right: 0;
@@ -30,22 +17,21 @@
       }
       
       .menu-burger {
-          @media screen and (max-width: $max-mobile) {
+          //   @media screen and (max-width: $max-mobile) {
+          //       position: relative;
+          //       display: inline-flex;
+          //       padding: 0;
+          //       border: none;
+          //       outline: none;
+          //       background-color: $colorWhite;
+          //       &:hover,
+          //       &:focus {
+          //           color: $colorAccent;
+          //       }
+          //   }
+          @media screen and (min-width: $mobile) {
               position: relative;
-              z-index: 8;
-              display: inline-flex;
-              padding: 0;
-              border: none;
-              outline: none;
-              background-color: $colorWhite;
-              &:hover,
-              &:focus {
-                  color: $colorAccent;
-              }
-          }
-          @media screen and ($mobile) {
-              position: relative;
-              z-index: 8;
+              z-index: 10;
               display: inline-flex;
               padding: 0;
               border: none;
