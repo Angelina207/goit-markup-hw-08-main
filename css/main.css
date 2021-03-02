@@ -501,7 +501,7 @@ header {
 }
 
 .modal-box {
-  padding: 38px 40px;
+  padding: 38px 38px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -658,7 +658,19 @@ header {
 
 .check-box {
   display: block;
-  padding-left: 7px;
+}
+@media screen and (max-width: 479px) {
+  .check-box {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .check-box {
+    padding-left: 7px;
+  }
 }
 
 .check__browser {
@@ -679,7 +691,7 @@ header {
   display: inline-block;
   width: 15px;
   height: 15px;
-  margin: 0px 8px 0px 0px;
+  margin: 15px 5px 0px 0px;
   border: solid 2px #212121;
   border-radius: 2px;
   -webkit-box-align: center;
@@ -723,6 +735,7 @@ header {
   border-style: none;
   font-weight: bold;
   padding: 0px;
+  margin-top: 30px;
   color: #FFFFFF;
   letter-spacing: 0.06em;
   background-color: #2196F3;
