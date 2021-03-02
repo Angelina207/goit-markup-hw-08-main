@@ -8,10 +8,10 @@
         @media screen and (max-width: $max-mobile) {
             width: 100%;
             height: 400px;
-            background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/header-img480x400.jpg');
+            background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/header-img480x400.jpg');
             @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2px) {
                 .sec-busy {
-                    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/header-img480x400@2x.jpg');
+                    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/header-img480x400@2x.jpg');
                 }
             }
         }
