@@ -794,11 +794,12 @@ header {
 @media screen and (min-width: 1200px) {
   .sec-busy {
     height: 600px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/header-img1600x600.jpg;");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-img1600x600.jpg;");
+    padding: 200px 0px 200px 0px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/header-img1600x600.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-img1600x600.jpg");
   }
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2px) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2px) {
   .sec-busy .sec-busy {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/header-img1600x600@2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-img1600x600@2x.jpg");
@@ -814,6 +815,12 @@ header {
   font-size: 26px;
   line-height: 1.6;
   margin: 0px;
+}
+@media screen and (min-width: 1200px) {
+  .sec__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .sec__btn {
