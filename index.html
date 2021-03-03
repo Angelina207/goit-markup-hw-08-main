@@ -15,60 +15,44 @@
 
 <body>
     <!--Главные ссылки в шапке сайта-->
-    <!-- <header>
+    <!-- не применяются цвета стилей к линкам -->
+    <header>
         <div class="container header--flex">
-            <nav class="navigation ">
-                <a class="logo" href="./index.html"><span class="logo--blue">Web</span>Studio</a>
-
-                <button class="menu-burger" data-menu-button>
-                    <svg class="icons__menu" aria-label="menu switch " width="24px " height="24px ">
-                        <use class="icon__btn-burger" href="./images/symbol-defs.svg#icon-menu_24px "></use>
-                        <use class="icon__btn-close" href="./images/symbol-defs.svg#icon-close_24px "></use>
-                    </svg>
-                </button>
-                <div class="menu__mobile-wrapper" id="menu-container" data-menu>
-                    <ul class="header-nav ">
-                        <li class="header__list ">
-                            <a class="header__current " href="./index.html ">Студия</a>
+            <a class="logo" href="./index.html"><span class="logo--blue">Web</span>Studio</a>
+            <nav class="header-nav">
+                <div class="menu-wrapper">
+                    <button class="menu__btn"></button>
+                    <ul class="menu__block">
+                        <li class="menu__link current__link">
+                            <a href="./index.html">Studio</a>
                         </li>
-                        <li class="header__list ">
-                            <a class="header__link " href="./portfolio.html ">Портфолио</a>
+                        <li class="menu__link">
+                            <a href="./portfolio.html">Portfolio</a>
                         </li>
-                        <li class="header__list ">
-                            <a class="header__link " href="Контакты ">Контакты</a>
+                        <li class="menu__link">
+                            <a href="#">Contacts</a>
                         </li>
                     </ul>
-
-                    <div class="communication-links ">
-                        <a class="comm__links comm__links--accent" href="tel:+38096111111 ">
-                            <svg class="comm__smart ">
-                            <use href="./images/symbol-defs.svg#icon-smartphone "></use>
-                        </svg> +38 096 111 11 11</a>
-                        <a class="comm__links  comm__links--right " href="email:info@devstudio.com ">
-                            <svg class="comm__envelope ">
-                            <use href="./images/symbol-defs.svg#icon-envelope-hover "></use>
-                        </svg> info@devstudio.com
-                        </a>
-                    </div>
-                    <ul class="menu-contain">
-                        <li class="">
-                            <a class="menu__link border--style" href="https://www.instagram.com/">Instagram</a>
+                    <a class="menu__contacts" href="tel:+38096111111">+380 96 1111 11</a>
+                    <a class="menu__contacts" href="email:info@devstudio.com">info@devstudio.com</a>
+                    <ul class="network-block">
+                        <li class="network__link network__link--border--left">
+                            <a href="https://www.instagram.com/">Instagram</a>
                         </li>
-                        <li>
-                            <a class="menu__link border--left " href="https://twitter.com/?lang=ru ">Twitter</a>
+                        <li class="network__link network__link--border--left">
+                            <a href="https://twitter.com/?lang=ru">Twitter</a>
                         </li>
-                        <li>
-                            <a class="menu__link border--left " href="https://uk-ua.facebook.com/ ">Facebook</a>
+                        <li class="network__link network__link--border--left">
+                            <a href="https://uk-ua.facebook.com/">Facebook</a>
                         </li>
-                        <li>
-                            <a class="menu__link border--left " href="https://www.linkedin.com/ ">Linkedin</a>
+                        <li class="network__link network__link--border--left">
+                            <a href="https://www.linkedin.com/">Linkedin</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
-    </header> -->
-
+    </header>
     <!--Основная информация о компании-->
     <main>
         <section class="sec-busy ">

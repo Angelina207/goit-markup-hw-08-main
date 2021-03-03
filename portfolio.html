@@ -18,37 +18,40 @@
     <!-- шапка сайта -->
     <header>
         <div class="container header--flex">
-            <nav class="navigation">
-                <a class="logo" href="./index.html"><span class="logo--blue">Web</span>Studio</a>
 
-                <ul class="header-nav">
-                    <li class="header__list">
-                        <a class="header__link" href="./index.html">Студия</a>
-                    </li>
-                    <li class="header__list">
-                        <a class="header__current" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="header__list">
-                        <a class="header__link" href="Контакты">Контакты</a>
-                    </li>
-                </ul>
+            <a class="logo" href="./index.html"><span class="logo--blue">Web</span>Studio</a>
+            <nav class="header-nav">
+                <div class="menu-wrapper">
+                    <button class="menu__btn"></button>
+                    <ul class="menu__block">
+                        <li class="menu__link current__link">
+                            <a href="./index.html">Studio</a>
+                        </li>
+                        <li class="menu__link">
+                            <a href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="menu__link">
+                            <a href="#">Contacts</a>
+                        </li>
+                    </ul>
+                    <a class="menu__contacts" href="tel:+38096111111">+380 96 1111 11</a>
+                    <a class="menu__contacts" href="email:info@devstudio.com">info@devstudio.com</a>
+                    <ul class="menu__social">
+                        <li>
+                            <a href="https://www.instagram.com/">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/?lang=ru">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://uk-ua.facebook.com/">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-
-            <ul class="communication-links">
-                <li>
-                    <a class="comm__links comm__links--right" href="email:info@devstudio.com">
-                        <svg class="comm__envelope">
-                            <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
-                        </svg> info@devstudio.com
-                    </a>
-                </li>
-                <li>
-                    <a class="comm__links" href="tel:+38096111111">
-                        <svg class="comm__smart">
-                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                        </svg> +38 096 111 11 11</a>
-                </li>
-            </ul>
         </div>
     </header>
     <hr class="underline">
@@ -284,7 +287,7 @@
             <div class="footer-container ">
                 <div class="footer__nav ">
                     <div class="footer__column">
-                        <a href=" WebStudio " class="footer-logo "><span class="logo--blue ">Web</span>Studio</a>
+                        <a href="./index.html" class="footer-logo "><span class="logo--blue ">Web</span>Studio</a>
 
                         <address>
                 <a href="# "><p class="address ">г. Киев, пр-т Леси Украинки, 26</p></a>
@@ -348,7 +351,7 @@
         </div>
     </footer>
 
-
+    <script src="./js/menu.js "></script>
 </body>
 
 </html>
