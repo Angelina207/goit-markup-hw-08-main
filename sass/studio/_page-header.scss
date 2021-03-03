@@ -1,79 +1,113 @@
- header {
-     background-color: $colorWhite;
- }
- 
- .header-nav {
-     @media screen and (min-width: $tablet) {
-         flex-direction: column;
-     }
- }
- 
- .logo {
-     @media screen and (max-width: $min-desktop) {
-         color: $colorDark;
-         font-size: 24px;
-         letter-spacing: 0.03em;
-         font-family: $logoFont;
-         font-weight: bold;
-         line-height: 1.16;
-         padding: 0px;
-         margin: 0px;
-         display: inline-block;
-         text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-     }
-     @media screen and (min-width: $desktop) {
-         font-size: 26px;
-         line-height: 1.19;
-         letter-spacing: 0.03em;
-         font-family: $logoFont;
-         font-weight: bold;
-         padding: 0px;
-         margin: 0px;
-         display: inline-block;
-         color: $colorDark;
-         text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-     }
- }
- 
- .menu__block {
-     margin: 0px;
-     padding: 0px;
- }
- 
- .menu__link {
-     font-weight: 500;
-     font-size: 40px;
-     line-height: 47px;
-     letter-spacing: 0.02em;
-     color: $colorDark;
- }
- 
- .current__link {
-     color: $colorAccent;
- }
- 
- .menu__contacts {
-     font-weight: 500;
-     font-size: 24px;
-     line-height: 28px;
-     letter-spacing: 0.02em;
- }
- 
- .network-block {
-     margin: 0px;
-     padding: 0px;
- }
- 
- .network__link {
-     display: inline-flex;
-     font-weight: 500;
-     font-size: 18px;
-     line-height: 22px;
-     letter-spacing: 0.02em;
- }
- 
- .network__link--border--left {
-     height: 22px;
-     margin-right: 10px;
-     border-left: 1px solid rgba(33, 33, 33, 0.2);
- }
+header {
+    background-color: $colorWhite;
+}
+
+.header-nav {
+    @media screen and (min-width: $tablet) {
+        flex-direction: column;
+    }
+}
+
+.logo {
+    @media screen and (max-width: $min-desktop) {
+        color: $colorDark;
+        font-size: 24px;
+        letter-spacing: 0.03em;
+        font-family: $logoFont;
+        font-weight: bold;
+        line-height: 1.16;
+        padding: 0px;
+        margin: 0px;
+        display: inline-block;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        font-family: $logoFont;
+        font-weight: bold;
+        padding: 0px;
+        margin: 0px;
+        display: inline-block;
+        color: $colorDark;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.menu__block {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu__list {
+    padding-bottom: 35px;
+}
+
+.menu__link {
+    display: block;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: $colorDark;
+}
+
+.current__link {
+    color: $colorAccent;
+}
+
+.communication-menu {
+    margin: 267px 0px 0px 0px;
+    padding: 0px;
+}
+
+.communication__list--bottom {
+    padding-bottom: 30px;
+}
+
+.comm__link {
+    display: block;
+    padding-top: 30px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: $colorMain;
+}
+
+.comm__link--accent {
+    font-size: 34px;
+    line-height: 1.17;
+    color: $colorAccent;
+}
+
+.network-block {
+    display: inline-flex;
+    margin: 0px;
+    padding: 64px 0px 0px 0px;
+    @media screen and (min-width: $max-tablet) {
+        display: none;
+    }
+}
+
+.network__link {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-right: 10px;
+    letter-spacing: 0.02em;
+    color: $colorAccent;
+}
+
+.network__link--border--left {
+    width: 22px;
+    margin-left: 10px;
+    transform: rotate(90deg);
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.network__link--margin--right {
+    margin-right: 10px;
+}
