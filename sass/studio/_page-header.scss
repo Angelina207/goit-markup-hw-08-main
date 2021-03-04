@@ -1,4 +1,6 @@
 header {
+    padding: 16px 0px;
+    width: 100%;
     background-color: $colorWhite;
 }
 
@@ -9,29 +11,19 @@ header {
 }
 
 .logo {
-    @media screen and (max-width: $min-desktop) {
-        color: $colorDark;
-        font-size: 24px;
-        letter-spacing: 0.03em;
-        font-family: $logoFont;
-        font-weight: bold;
-        line-height: 1.16;
-        padding: 0px;
-        margin: 0px;
-        display: inline-block;
-        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
+    color: $colorDark;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    font-family: $logoFont;
+    font-weight: bold;
+    line-height: 1.16;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     @media screen and (min-width: $desktop) {
         font-size: 26px;
         line-height: 1.19;
-        letter-spacing: 0.03em;
-        font-family: $logoFont;
-        font-weight: bold;
-        padding: 0px;
-        margin: 0px;
-        display: inline-block;
-        color: $colorDark;
-        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 }
 
@@ -62,10 +54,6 @@ header {
     padding: 0px;
 }
 
-.communication__list--bottom {
-    padding-bottom: 30px;
-}
-
 .comm__link {
     display: block;
     padding-top: 30px;
@@ -84,6 +72,7 @@ header {
 
 .network-block {
     display: inline-flex;
+    flex-wrap: wrap;
     margin: 0px;
     padding: 64px 0px 0px 0px;
     @media screen and (min-width: $max-tablet) {
@@ -102,9 +91,8 @@ header {
 }
 
 .network__link--border--left {
-    width: 22px;
+    height: 22px;
     margin-left: 10px;
-    transform: rotate(90deg);
     border-left: 1px solid rgba(33, 33, 33, 0.2);
 }
 
