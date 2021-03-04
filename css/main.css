@@ -196,9 +196,14 @@ header {
   content: "";
   height: 3px;
   width: 24px;
-  -webkit-transition: all 250ms ease 0s;
-  transition: all 250ms ease 0s;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
   background-color: #212121;
+}
+
+.menu__btn:hover::after,
+.menu__btn:hover::before {
+  background-color: #2196F3;
 }
 
 .menu__btn::after {
@@ -223,14 +228,24 @@ header {
           transform: rotate(-45deg);
 }
 
-.menu-btn--style::after {
+.menu__btn--style::after {
   position: absolute;
   content: "";
   top: 43%;
   right: 0%;
   height: 3px;
   width: 100%;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
   background-color: #212121;
+}
+
+.menu__btn--style:hover::after {
+  background-color: #2196F3;
+}
+
+.menu__btn.is-open .menu__btn--style {
+  opacity: 0;
 }
 
 .menu-burger {
