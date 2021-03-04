@@ -2,11 +2,14 @@ header {
     padding: 16px 0px;
     width: 100%;
     background-color: $colorWhite;
+    @media screen and (min-width: $max-tablet) {
+        padding: 26px 0px;
+    }
 }
 
 .header-nav {
     @media screen and (min-width: $tablet) {
-        flex-direction: column;
+        display: inline-flex;
     }
 }
 

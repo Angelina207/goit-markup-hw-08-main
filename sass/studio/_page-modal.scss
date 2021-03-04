@@ -17,6 +17,8 @@
             .modal {
                 @media screen and (max-width: $max-mobile) {
                     position: absolute;
+                    overflow: auto;
+                    z-index: 10000;
                     transform: translate(-50%, -50%);
                     top: 50%;
                     left: 50%;
@@ -26,6 +28,8 @@
                 }
                 @media screen and (min-width: $mobile) {
                     position: absolute;
+                    overflow: auto;
+                    z-index: 3000;
                     transform: translate(-50%, -50%);
                     top: 50%;
                     left: 50%;

@@ -11,5 +11,7 @@
 
         mobileMenuRef.classList.toggle("is-open");
         document.body.classList.toggle('menu-open');
+
     });
+
 })();
