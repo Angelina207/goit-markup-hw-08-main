@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Студия</title>
+    <title>Studio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,11 +19,11 @@
     <header>
         <div class="container header--flex">
             <a class="logo" href="./index.html"><span class="logo--blue">Web</span>Studio</a>
-            <nav class="header-nav">
-                <button class="menu__btn" data-menu-button>
-                    <span class="menu__btn--style"></span>
-                </button>
-                <div class="menu-burger" data-menu>
+            <button class="menu__btn" data-menu-button>
+                <span class="menu__btn--style"></span>
+            </button>
+            <div class="menu-burger" data-menu>
+                <nav class="header-nav header-nav--flex">
                     <ul class="menu__block">
                         <li class="menu__list">
                             <a class="menu__link current__link" href="./index.html">Studio</a>
@@ -36,25 +36,37 @@
                         </li>
                     </ul>
                     <ul class="communication-menu">
-                        <li class="communication__list"><a class="comm__link comm__link--accent" href="tel:+38096111111">+380 96 1111 11</a></li>
-                        <li class="communication__list"><a class="comm__link" href="mail:info@devstudio.com">info@devstudio.com</a></li>
-                    </ul>
-                    <ul class="network-block">
-                        <li>
-                            <a class="network__link network__link--margin--right" href="https://www.instagram.com/">Instagram</a>
+                        <li class="communication__list">
+                            <a class="comm__link comm__link--accent" href="tel:+38096111111">
+                                <svg class="comm__icon comm__icon--smartphone">
+                                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                                </svg> +380 96 1111 11</a>
                         </li>
-                        <li>
-                            <a class="network__link network__link--border--left" href="https://twitter.com/?lang=ru">Twitter</a>
-                        </li>
-                        <li>
-                            <a class="network__link network__link--border--left" href="https://uk-ua.facebook.com/">Facebook</a>
-                        </li>
-                        <li>
-                            <a class="network__link network__link--border--left" href="https://www.linkedin.com/">Linkedin</a>
+                        <li class="communication__list comm__list--bottom">
+                            <a class="comm__link" href="mail:info@devstudio.com">
+                                <svg class="comm__icon comm__icon--envelope">
+                                    <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
+                                </svg>info@devstudio.com</a>
                         </li>
                     </ul>
-                </div>
-            </nav>
+                </nav>
+
+                <ul class="network-block">
+                    <li>
+                        <a class="network__link network__link--margin--right" href="https://www.instagram.com/">Instagram</a>
+                    </li>
+                    <li>
+                        <a class="network__link network__link--border--left" href="https://twitter.com/?lang=ru">Twitter</a>
+                    </li>
+                    <li>
+                        <a class="network__link network__link--border--left" href="https://uk-ua.facebook.com/">Facebook</a>
+                    </li>
+                    <li>
+                        <a class="network__link network__link--border--left" href="https://www.linkedin.com/">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </header>
     <!--Основная информация о компании-->
