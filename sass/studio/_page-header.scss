@@ -69,13 +69,13 @@
          letter-spacing: 0.02em;
          color: $colorAccent;
      }
-     .network__link--border--left {
-         height: 22px;
+     .border__line {
+         display: flex;
+         border-right: solid 1px rgba(33, 33, 33, 0.2);
          margin-left: 10px;
-         border-left: 1px solid rgba(33, 33, 33, 0.2);
      }
-     .network__link--margin--right {
-         margin-right: 10px;
+     .border__line--right {
+         margin-left: 10px;
      }
  }
  

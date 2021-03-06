@@ -1,11 +1,11 @@
             .portfolio-sec {
                 background-color: $colorWhite;
-                padding: 60px 0px 40px 0px;
+                padding: 94px 0px 40px 0px;
                 width: 100%;
-                @media screen and (width: $max-tablet) {
+                @media screen and (min-width: $max-tablet) {
                     padding: 60px 0px 30px 0px;
                 }
-                @media screen and (width: $desktop) {
+                @media screen and (min-width: $desktop) {
                     padding: 94px 0px 64px 0px;
                 }
             }
