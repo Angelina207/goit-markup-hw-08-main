@@ -1,65 +1,74 @@
- @media screen and (max-width: $tablet) {
-     header {
-         width: 100%;
-         background-color: $colorWhite;
+     @media screen and (max-width: $tablet) {
+         header {
+             width: 100%;
+             background-color: $colorWhite;
+         }
+         .logo {
+             color: $colorDark;
+             font-size: 24px;
+             letter-spacing: 0.03em;
+             font-family: $logoFont;
+             font-weight: bold;
+             line-height: 1.16;
+             padding: 16px 0px;
+             margin: 0px;
+             display: inline-block;
+             text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+         }
+         .menu__block {
+             margin: 0px;
+             padding: 0px;
+         }
+         .menu__list {
+             padding-bottom: 35px;
+         }
+         .menu__link {
+             display: block;
+             font-weight: 500;
+             font-size: 40px;
+             line-height: 47px;
+             letter-spacing: 0.02em;
+             color: $colorDark;
+         }
+         .current__link {
+             color: $colorAccent;
+         }
+         .communication-menu {
+             position: absolute;
+             //  margin: 267px 0px 0px 0px;
+             padding: 0px;
+             bottom: 134px;
+             left: 40;
+         }
+         .comm__link {
+             display: block;
+             padding-top: 30px;
+             font-weight: 500;
+             font-size: 24px;
+             line-height: 28px;
+             letter-spacing: 0.02em;
+             color: $colorMain;
+         }
+         .comm__link--accent {
+             font-size: 34px;
+             line-height: 1.17;
+             color: $colorAccent;
+         }
+         .comm__icon {
+             display: none;
+         }
      }
-     .logo {
-         color: $colorDark;
-         font-size: 24px;
-         letter-spacing: 0.03em;
-         font-family: $logoFont;
-         font-weight: bold;
-         line-height: 1.16;
-         padding: 16px 0px;
-         margin: 0px;
-         display: inline-block;
-         text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-     }
-     .menu__block {
-         margin: 0px;
-         padding: 0px;
-     }
-     .menu__list {
-         padding-bottom: 35px;
-     }
-     .menu__link {
-         display: block;
-         font-weight: 500;
-         font-size: 40px;
-         line-height: 47px;
-         letter-spacing: 0.02em;
-         color: $colorDark;
-     }
-     .current__link {
-         color: $colorAccent;
-     }
-     .communication-menu {
-         margin: 267px 0px 0px 0px;
-         padding: 0px;
-     }
-     .comm__link {
-         display: block;
-         padding-top: 30px;
-         font-weight: 500;
-         font-size: 24px;
-         line-height: 28px;
-         letter-spacing: 0.02em;
-         color: $colorMain;
-     }
-     .comm__link--accent {
-         font-size: 34px;
-         line-height: 1.17;
-         color: $colorAccent;
-     }
+     
      .network-block {
+         position: absolute;
          display: inline-flex;
+         left: 40px;
+         bottom: 48px;
          flex-wrap: wrap;
          margin: 0px;
          padding: 64px 0px 0px 0px;
      }
-     .comm__icon {
-         display: none;
-     }
+     
      .network__link {
          display: block;
          font-weight: 500;
@@ -69,161 +78,162 @@
          letter-spacing: 0.02em;
          color: $colorAccent;
      }
+     
      .border__line {
          display: flex;
          border-right: solid 1px rgba(33, 33, 33, 0.2);
          margin-left: 10px;
      }
+     
      .border__line--right {
          margin-left: 10px;
      }
- }
- 
- @media screen and (min-width: $max-tablet) {
-     .header--flex {
-         display: flex;
-         align-items: center;
-     }
-     .header-nav {
-         display: flex;
-         align-items: center;
-     }
-     .logo {
-         display: flex;
-         color: $colorDark;
-         font-size: 24px;
-         letter-spacing: 0.03em;
-         font-family: $logoFont;
-         font-weight: bold;
-         line-height: 1.16;
-         padding: 24px 0px;
-         margin: 0px;
-         text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-     }
-     .menu__block {
-         display: flex;
-         padding: 0px;
-         margin: 0px 0px 0px 95px;
-     }
-     .menu__list {
-         position: relative;
-         display: flex;
-         margin-right: 50px;
-     }
-     .menu__link::after {
-         position: absolute;
-         content: '';
-         left: 0%;
-         bottom: 0%;
-         width: 0%;
-         height: 4px;
-         border-radius: 50px;
-         transition: width 250ms, box-shadow 250ms;
-         transform: translamsteX(-50%);
-         background-color: $colorAccent;
-     }
-     .menu__link:hover::after,
-     .menu__link:focus::after {
-         width: 100%;
-         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-     }
-     .menu__link {
-         display: block;
-         font-weight: 500;
-         font-size: 15px;
-         line-height: 1.14;
-         padding: 30px 0px;
-         letter-spacing: 0.02em;
-         color: $colorDark;
-         transition: color 250ms;
-     }
-     .menu__link:hover,
-     .menu__link:focus {
-         color: $colorAccent;
-     }
-     .current__link {
-         color: $colorAccent;
-     }
-     .current__link::after {
-         position: absolute;
-         display: block;
-         content: "";
-         left: 0%;
-         bottom: 0%;
-         width: 100%;
-         height: 4px;
-         border-radius: 50px;
-         background-color: $colorAccent;
-     }
-     .network-block {
-         display: none;
-     }
-     .communication-menu {
-         display: flex;
-         flex-direction: column-reverse;
-         padding: 0%;
-         margin-left: 50px;
-     }
-     .comm__list--bottom {
-         padding-bottom: 10px;
-     }
-     .comm__link {
-         display: block;
-         font-weight: 500;
-         font-size: 12px;
-         line-height: 1.16;
-         letter-spacing: 0.02em;
-         fill: $colorMain;
-         color: $colorMain;
-         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-         &:hover,
-         &:focus {
+     
+     @media screen and (min-width: $max-tablet) {
+         .header--flex {
+             display: flex;
+             align-items: center;
+         }
+         .header-nav {
+             display: flex;
+             align-items: center;
+         }
+         .logo {
+             display: flex;
+             color: $colorDark;
+             font-size: 24px;
+             letter-spacing: 0.03em;
+             font-family: $logoFont;
+             font-weight: bold;
+             line-height: 1.16;
+             padding: 24px 0px;
+             margin: 0px;
+             text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+         }
+         .menu__block {
+             display: flex;
+             padding: 0px;
+             margin: 0px 0px 0px 95px;
+         }
+         .menu__list {
+             position: relative;
+             display: flex;
+             margin-right: 50px;
+         }
+         .menu__link::after {
+             position: absolute;
+             content: '';
+             left: 0%;
+             bottom: 0%;
+             width: 0%;
+             height: 4px;
+             border-radius: 50px;
+             transition: width 250ms, box-shadow 250ms;
+             transform: translamsteX(-50%);
+             background-color: $colorAccent;
+         }
+         .menu__link:hover::after,
+         .menu__link:focus::after {
+             width: 100%;
+             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+         }
+         .menu__link {
+             display: block;
+             font-weight: 500;
+             font-size: 15px;
+             line-height: 1.14;
+             padding: 30px 0px;
+             letter-spacing: 0.02em;
+             color: $colorDark;
+             transition: color 250ms;
+         }
+         .menu__link:hover,
+         .menu__link:focus {
              color: $colorAccent;
-             fill: $colorAccent;
+         }
+         .current__link {
+             color: $colorAccent;
+         }
+         .current__link::after {
+             position: absolute;
+             display: block;
+             content: "";
+             left: 0%;
+             bottom: 0%;
+             width: 100%;
+             height: 4px;
+             border-radius: 50px;
+             background-color: $colorAccent;
+         }
+         .network-block {
+             display: none;
+         }
+         .communication-menu {
+             display: flex;
+             flex-direction: column-reverse;
+             padding: 0%;
+             margin-left: 50px;
+         }
+         .comm__list--bottom {
+             padding-bottom: 10px;
+         }
+         .comm__link {
+             display: block;
+             font-weight: 500;
+             font-size: 12px;
+             line-height: 1.16;
+             letter-spacing: 0.02em;
+             fill: $colorMain;
+             color: $colorMain;
+             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+             &:hover,
+             &:focus {
+                 color: $colorAccent;
+                 fill: $colorAccent;
+             }
+         }
+         .comm__icon {
+             margin: 0px 8px 0px 0px;
+         }
+         .comm__icon--smartphone {
+             width: 10px;
+             height: 14px;
+         }
+         .comm__icon--envelope {
+             width: 14px;
+             height: 10px;
          }
      }
-     .comm__icon {
-         margin: 0px 8px 0px 0px;
+     
+     @media screen and (min-width: $desktop) {
+         .logo {
+             font-size: 26px;
+             line-height: 1.19;
+         }
+         .menu__link {
+             padding: 32px 0px;
+         }
+         .communication-menu {
+             align-items: center;
+             justify-content: center;
+             flex-direction: row-reverse;
+             margin-top: 0px;
+             margin-bottom: 0px;
+         }
+         .comm__link {
+             font-size: 14px;
+             line-height: 1.14;
+         }
+         .comm__icon--smartphone {
+             height: 16px;
+             margin-left: 30px;
+         }
+         .comm__icon--envelope {
+             width: 16px;
+             height: 12px;
+             margin-left: 235px;
+         }
+         .comm__list--bottom {
+             padding: 0;
+         }
      }
-     .comm__icon--smartphone {
-         width: 10px;
-         height: 14px;
-     }
-     .comm__icon--envelope {
-         width: 14px;
-         height: 10px;
-     }
- }
- 
- @media screen and (min-width: $desktop) {
-     .logo {
-         font-size: 26px;
-         line-height: 1.19;
-     }
-     .menu__link {
-         padding: 32px 0px;
-     }
-     .communication-menu {
-         align-items: center;
-         justify-content: center;
-         flex-direction: row-reverse;
-         margin-top: 0px;
-         margin-bottom: 0px;
-     }
-     .comm__link {
-         font-size: 14px;
-         line-height: 1.14;
-     }
-     .comm__icon--smartphone {
-         height: 16px;
-         margin-left: 30px;
-     }
-     .comm__icon--envelope {
-         width: 16px;
-         height: 12px;
-         margin-left: 235px;
-     }
-     .comm__list--bottom {
-         padding: 0;
-     }
- }

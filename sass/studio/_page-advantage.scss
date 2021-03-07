@@ -41,17 +41,25 @@
         letter-spacing: 0.03em;
         color: $colorDark;
         text-transform: uppercase;
-        text-align: center;
+        @media screen and (min-width: $max-tablet) {
+            text-align: left;
+        }
     }
     
     .adv__info {
-        margin: 0px;
-        text-align: center;
+        flex-wrap: wrap;
         font-size: 15px;
         line-height: 1.71;
+        margin: 0px;
         padding-top: 10px;
         color: $colorMain;
         letter-spacing: 0.03em;
+        @media screen and (min-width: $max-tablet) {
+            width: 354px;
+        }
+        @media screen and (min-width: $desktop) {
+            width: 270px;
+        }
     }
     
     .icon-block {
